@@ -15,14 +15,14 @@ var Dpr=1, uAgent=window.navigator.userAgent;
             if(wWidth > wHeight){
                 wWidth = wHeight;
             }
-            wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+            wFsize = wWidth > 980 ? 144 : wWidth / 7.5;
             wFsize = wFsize > 32 ? wFsize : 32;
             window.screenWidth_ = wWidth;
             if(isYIXIN || is2345 || ishaosou || isSogou || isLiebao || isGnbr){
                 setTimeout(function(){
                     wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth;
                     wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
-                    wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+                    wFsize = wWidth > 980 ? 144 : wWidth / 7.5;
                     wFsize = wFsize > 32 ? wFsize : 32;
                     document.getElementsByTagName('html')[0].style.fontSize = wFsize*2 + 'px';
                 },500);
